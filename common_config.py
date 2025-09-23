@@ -3,11 +3,11 @@ import scanpy as sc
 # plt.rcParams["font.family"] = "sans-serif"
 # plt.rcParams["font.sans-serif"] = ["Arial", "Helvetica"]
 
-# TODO use new colors
-rsc_blue = "#34669A"
-rsc_red = "#D2455E"
-rsc_orange = "#F37800"
-rsc_gold = "#FFD700"
+rsc_lightgreen = "#a7c957"
+rsc_darkgreen = "#386641"
+rsc_blue = "#3f88c5"
+rsc_grey = "#959595"
+rsc_turquise = "#2EC4B6"
 
 
 def figure_journal_basic():
