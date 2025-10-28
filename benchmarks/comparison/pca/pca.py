@@ -14,4 +14,4 @@ rsc.get.anndata_to_GPU(adata_rsc)
 sc.pp.pca(adata_sc)
 rsc.pp.pca(adata_rsc)
 
-np.testing.assert_allclose(np.abs(adata_sc.obsm["X_pca"]),np.abs(adata_rsc.obsm["X_pca"]),rtol=1e-6,atol=1e-6)
+np.testing.assert_allclose(np.abs(adata_sc.obsm["X_pca"]), np.abs(adata_rsc.obsm["X_pca"]), rtol=1e-6, atol=1e-6)
