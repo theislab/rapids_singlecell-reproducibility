@@ -13,5 +13,7 @@ adata_rsc = adata_sc.copy()
 rsc.get.anndata_to_GPU(adata_rsc)
 sc.pp.pca(adata_sc)
 rsc.pp.pca(adata_rsc)
-
+# PCA Loadings
+np.testing.assert_allclose(np.abs(adata_sc.varm["PCs"]), np.abs(adata_rsc.varm["PCs"]), rtol=1e-6, atol=1e-6)
+# PCA Transform
 np.testing.assert_allclose(np.abs(adata_sc.obsm["X_pca"]), np.abs(adata_rsc.obsm["X_pca"]), rtol=1e-6, atol=1e-6)
